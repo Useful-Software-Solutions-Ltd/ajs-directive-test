@@ -6,7 +6,7 @@ var app;
             restrict: 'E',
             templateUrl: 'ajsDirective1.html',
             scope: {
-                team: '='
+                person: '='
             }
         };
         return directive;

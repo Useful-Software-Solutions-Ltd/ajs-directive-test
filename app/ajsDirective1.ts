@@ -1,12 +1,12 @@
 module app {
     'use strict';
 
-    export interface Iteam{
-        
+    interface Iperson{
+        name: string;
     }
 
     export interface ajsDirective1Scope extends ng.IScope {
-        team: Iteam;
+        person: Iperson;
     }
 
     function ajsDirective1(): ng.IDirective {
@@ -14,7 +14,7 @@ module app {
             restrict: 'E',
             templateUrl: 'ajsDirective1.html',
             scope: {
-                team: '='
+                person: '='
             }
         };
 

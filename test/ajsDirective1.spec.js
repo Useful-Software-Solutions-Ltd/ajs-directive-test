@@ -8,17 +8,17 @@ describe("ajsDirective1", function () {
     beforeEach(inject(function ($compile, $rootScope) {
         //set up the directive scope
         var scope = $rootScope.$new();
-        scope.team = { name: 'FC Barcelona' };
+        scope.person = { name: 'Dave' };
         //set the directive element
-        element = angular.element('<ajs-directive1 team="team"></ajs-directive1>');
+        element = angular.element('<ajs-directive1 person="person"></ajs-directive1>');
         //compile the directive
         $compile(element)(scope);
         //bind the data
         scope.$digest();
     }));
-    it('should display the team name in the header', inject(function () {
-        //test that the {{team.name}} binding is now FC Barcelona
-        expect(element.text()).toContain('FC Barcelona');
-    }));
+    it('should display the person name in the header', function () {
+        //test that the {{person.name}} binding is now dave
+        expect(element.text()).toContain('Dave');
+    });
 });
 //# sourceMappingURL=ajsDirective1.spec.js.map

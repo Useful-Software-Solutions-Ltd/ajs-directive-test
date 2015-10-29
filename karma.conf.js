@@ -19,7 +19,7 @@ module.exports = function (config) {
       'bower_components/angular-mocks/angular-mocks.js',
       'app/app.js', //note the load order is really important here
       'app/**/*.js',
-      'app/ajs*.html', //step4 <must match the path in the directive (see step 3 as well)      
+      'app/**/ajs*.html', //step4 <must match the path in the directive (see step 3 as well)      
       'test/**/*.spec.js'
     ],
     
@@ -38,7 +38,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'app/ajs*.html': 'ng-html2js' //step 2
+      'app/**/ajs*.html': 'ng-html2js' //step 2
     },
 
     // test results reporter to use
