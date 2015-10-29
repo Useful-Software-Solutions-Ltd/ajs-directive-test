@@ -44,7 +44,6 @@ describe("ajsDirective2", () => {
 	});
 
 	it('should display the person name in the header', () => {
-
 		expect(element.text()).toContain('Dave');
 	});
 });

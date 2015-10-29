@@ -11,4 +11,5 @@ test:
 directive with no template just link function
 ajsDirective1.spec.ts: directive with external template binding testing
 ajsDirective2.spec.ts: testing code in a link function with injected service
+ajsDirective3.spec.ts: testing an attribute directive that listens for a $rootScope event
 directive with external template binding testing ng-show dynamic template
